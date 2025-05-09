@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">RexStay</div>
+        <div class="nav-link">
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Room</a>
+            <a href="#view">View</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero">
+            <h1>Welcome to RexStay</h1>
+            <p>Experience RexStay like never before</p>
+            <button class="cta-button">Book Now</button>
+        </div>
+    </header>
+
+    <section id="room">
+        <h2>Our Room</h2>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="https://plus.unsplash.com/premium_photo-1682377521697-bc598b52b08a?q" alt="">
+                <h3>Deluxe Room</h3>
+                <p>Spacious room with modern view</p>
+                <a href=""><button>View Detail</button></a>
+            </div>
+            <div class="room-card">
+                <img src="https://plus.unsplash.com/premium_photo-1682377521697-bc598b52b08a?q" alt="">
+                <h3>Executive Room</h3>
+                <p>Spacious room with modern view</p>
+                <a href=""><button>View Detail</button></a>
+            </div>
+            <div class="room-card">
+                <img src="https://plus.unsplash.com/premium_photo-1682377521697-bc598b52b08a?q" alt="">
+                <h3>Vip Room</h3>
+                <p>Spacious room with modern view</p>
+                <a href=""><button>View Detail</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="view">
+        <h2>View Hotel</h2>
+        <div class="view-grid">
+            <div class="view">
+                <i class="ri-medal-fill"></i>
+                <h3>Swimning Pool</h3>
+            </div>
+            <div class="view">
+                <i class="ri-medal-fill"></i>
+                <h3>Swimning Pool</h3>
+            </div>
+            <div class="view">
+                <i class="ri-medal-fill"></i>
+                <h3>Swimning Pool</h3>
+            </div>
+            <div class="view">
+                <i class="ri-medal-fill"></i>
+                <h3>Swimning Pool</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RexStay</h3>
+                <p>RexStay accomodation for the discerning travel</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: rex@gmail.com</p>
+                <p>Phone: 0878 9900 5678</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-link">
+                    <a href=""><i class="ri-medal-fill"></i></a>
+                    <a href=""><i class="ri-medal-fill"></i></a>
+                    <a href=""><i class="ri-medal-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-widget">
+        <button class="chat-button" onclick="toggleChat()">
+            <i class="ri-medal-fill"></i>
+        </button>
+
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h4>Live Chat</h4>
+                <button onclick="toggleChat()"><i class="ri-medal-fill"></i></button>
+            </div>
+            <div class="chat-message" id="chatMessage">
+                <div class="message received">
+                    <p>Hello How can we help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message">
+                <button onclick="sendMessage()"><i class="ri-medal-fill"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
