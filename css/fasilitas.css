@@ -1,0 +1,97 @@
+.fasilitas-header {
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1566073771259-6a8506099945') center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #9EBC8A;
+    --secondary-color: #537D5D;
+    --background-color: #f4f4f4;
+}
+
+.fasilitas-header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.fasilitas-header p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+.fasilitas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.amenity-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.amenity-card:hover {
+    transform: translateY(-10px);
+}
+
+.amenity-card i {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.amenity-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.amenity-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.amenity-card ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.amenity-card ul li {
+    color: #666;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.amenity-card ul li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .fasilitas-header h1 {
+        font-size: 2em;
+    }
+
+    .fasilitas-header p {
+        font-size: 1em;
+    }
+
+    .fasilitas-grid {
+        padding: 30px 15px;
+    }
+}

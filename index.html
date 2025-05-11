@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RexStay Villa </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">RexStay<span class="rex">.</span></div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="rooms.html">Room</a>
+            <a href="fasilitas.html">Fasilitas</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero" data-aos="fade-up">
+            <h1>Selamat Datang Di RexStay</h1>
+            <p>Rasakan pengalaman RexStay yang belum pernah ada sebelumnya</p>
+            <button class="cta-button">Booking Now</button>
+        </div>
+    </header>
+
+    <section id="rooms" data-aos="fade-up">
+        <h2>Villa Kami</h2>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="https://plus.unsplash.com/premium_photo-1661915661139-5b6a4e4a6fcc?q=" alt="Deluxe Room">
+                <h3>Standar Villa</h3>
+                <p>Kamar luas dengan fasilitas modern</p>
+                <a href="rooms.html#standar"><button>View Details</button></a>
+            </div>
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q" alt="Suite">
+                <h3>Sedang Villa</h3>
+                <p>Room RexStay dengan pemandangan panorama</p>
+                <a href="rooms.html#sedang"><button>View Details</button></a>
+            </div>
+            <div class="room-card">
+                <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?q" alt="Presidential">
+                <h3>Vip Villa</h3>
+                <p>Pengalaman RexStay terbaik</p>
+                <a href="rooms.html#vip"><button>View Details</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="fasilitas" data-aos="fade-up">
+        <h2>Villa Fasilitas</h2>
+        <div class="fasilitas-grid">
+            <div class="amenity">
+                <i class="fas fa-swimming-pool"></i>
+                <h3>Kolam Renang</h3>
+            </div>
+            <div class="amenity">
+                <i class="fas fa-spa"></i>
+                <h3>Spa & Wellness</h3>
+            </div>
+            <div class="amenity">
+                <i class="fas fa-utensils"></i>
+                <h3>Restoran</h3>
+            </div>
+            <div class="amenity">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Fitness Center</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RexStay</h3>
+                <p>Akomodasi RexStay untuk pelancong yang cerdas</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: RexStay@gmail.com</p>
+                <p>Phone: 0880 9765 2346</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-widget">
+        <button class="chat-button" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h4>Live Chat</h4>
+                <button onclick="toggleChat()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message received">
+                    <p>Halo! Ada yang bisa kami bantu hari ini?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
